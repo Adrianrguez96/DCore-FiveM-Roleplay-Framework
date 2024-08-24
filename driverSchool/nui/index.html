@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <title>Driver licences</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content hidden">
+        <div class ="main-computer">
+            <div class ="screen">
+                <div class="header-page">
+                    <span class="logo-header"></span>
+                </div>
+                <div class ="content-page">
+                    <span class ="page introduction-part">
+                        <h1>Introducción</h1>
+                        <p>
+                        Bienvenido a la escuela de conducción. Antes de comenzar con el test, se te va a dar una serie de conceptos básicos que debes tener en cuenta a la hora
+                        de conducir por el estado de San Andreas. Se le pide por favor que lea atentamente dichos conceptos dado a que son fundamentales para poder ser un buen conductor.
+                        Una vez finalizado la parte, teoríca se le hará un pequeño test para ver si ha afianzado los conocicimientos correctamente y, finalmente, se dara comienzo a una parte
+                        practica donde deberá manejar un vehículo.
+                        </p>
+                        <p class="good-luck-text">¡¡Mucha suerte y espero que la guía le sea de ayuda!!</p>
+                        <div class ="buttoms">
+                            <span class ="pass-buttom" data-page=".basic-part">SIGUIENTE</span>
+                        </div>
+                    </span>
+                    <span class ="page basic-part hidden">
+                        <h1>Los semaforos</h1>
+                        <p>
+                        Bienvenido a la escuela de conducción. Antes de comenzar con el test, se te va a dar una serie de conceptos básicos que debes tener en cuenta a la hora
+                        de conducir por el estado de San Andreas. Se le pide por favor que lea atentamente dichos conceptos dado a que son fundamentales para poder ser un buen conductor.
+                        Una vez finalizado la parte, teoríca se le hará un pequeño test para ver si ha afianzado los conocicimientos correctamente y, finalmente, se dara comienzo a una parte
+                        practica donde deberá manejar un vehículo.
+                        </p>
+                        <div class ="buttoms">
+                            <span class ="pass-buttom" data-page=".introduction-part">ANTERIOR</span>
+                            <span class ="pass-buttom" data-page=".final-test">SIGUIENTE</span>
+                        </div>
+                    </span>
+                    <span class ="page final-test hidden">
+                        <h1>Final</h1>
+                        <p>
+                            Hasta aquí llegan los contenidos básicos para poder ser un buen conductor en el estado de San Andreas, ahora procederemos a ver si ha afianzado sus conocimientos.
+                            Antes de comenzar, si quiere puede volver a atras y repasar aquellos conceptos donde tenga más dudas una vez empezado el test, no podrá hechar para atras para verlos.
+                            También importante recordarle que, el test, no tiene limite de tiempo por lo que hagalo tranquilamente para, posteriormente, poder hacer el practico con el profesor
+                            elegido para este.
+                        </p>
+                        <div class ="buttoms">
+                            <span class ="pass-buttom" data-page=".basic-part">ANTERIOR</span>
+                            <span class ="pass-buttom" data-page=".test-part-1">Empezar test</span>
+                        </div>
+                    </span>
+
+                    <span class ="page test-part-1 hidden">
+                        <h1>1. Si ve un STOP en mitad de una intercepción ¿Qué debe hacer?</h1>
+                        <form id="answer-1">
+                          <section>
+                            <div>
+                              <input type="radio" id="control_01" name="select" value="1">
+                              <label for="control_01">
+                                <p>En primer lugar debo pararme en el sitio, luego mirar para ver si pasa alguien y luego continuar</p>
+                              </label>
+                            </div>
+                            <div>
+                              <input type="radio" id="control_02" name="select" value="2">
+                              <label for="control_02">
+                                <p>No debo parar la señal me da la prioridad y puedo continuar</p>
+                              </label>
+                            </div>
+                            <div>
+                              <input type="radio" id="control_03" name="select" value="3">
+                              <label for="control_03">
+                                <p>Aminoro la velocidad miro a ver si pasa alguien en ese momento y, en caso contrario, continuo mi marcha</p>
+                              </label>
+                            </div>
+                            </section>
+                        </form>
+                        <div class ="buttoms">
+                            <span class ="test-btn" data-page=".test-part-2">SIGUIENTE</span>
+                        </div>
+                      </section>
+                    </span>
+
+                    <span class ="page test-part-2 hidden">
+                        <h1>2. Si vez un peaton donde no hay señales ¿Que debes hacer?</h1>
+                        <form id="answer-2">
+                          <section>
+                            <div>
+                              <input type="radio" id="control_04" name="select" value="1">
+                              <label for="control_04">
+                                <p>Siempre el vehículo tiene la prioridad respecto al peaton</p>
+                              </label>
+                            </div>
+                            <div>
+                              <input type="radio" id="control_05" name="select" value="2">
+                              <label for="control_05">
+                                <p>Si el peaton esta en un paso de peatones o zona peatonal, el tiene prioridad de paso</p>
+                              </label>
+                            </div>
+                            <div>
+                              <input type="radio" id="control_06" name="select" value="3">
+                              <label for="control_06">
+                                <p>El peaton siempre tiene prioridad de paso respecto a los vehículos</p>
+                              </label>
+                            </div>
+                            </section>
+                        <div class ="buttoms">
+                            <span class ="test-btn" data-page=".test-part-final">Finalizar test</span>
+                        </div>
+                      </section>
+                        </form>
+                    </span>
+                    <span class ="page test-part-final hidden">
+                  </span>
+                </div>
+            </div>
+            <div class="footer-screen">
+                <span class="logo"></span>
+            </div>
+        </div>
+    </div>
+    <div id ="main-notificacions">
+
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

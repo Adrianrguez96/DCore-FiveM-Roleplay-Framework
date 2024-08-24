@@ -1,0 +1,152 @@
+body {
+    margin:0;
+    padding:0;
+    height: 100vh;
+    user-select: none;
+    overflow: hidden;
+}
+
+.main-selector {
+    display:flex;
+    flex-direction: row;
+    width:40vh;
+    color:#333;
+    margin-top:8vh;
+    margin-left: 6vh;
+}
+.main-buttons {
+    display:flex;
+    flex-direction: column;
+}
+.button {
+    background-color:#CCC;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius:12px;
+    margin-bottom:12px;
+    width:55px;
+    height:55px;
+}
+.play {
+    background-size: 35px;
+    background-image: url("/nui/images/play-icon.svg");
+}
+.player {
+    background-size:40px;
+    background-image: url("/nui/images/player-icon.svg");
+}
+.create-player {
+    background-color:#96C163;
+    background-size: 25px;
+    background-image: url("/nui/images/plus-icon.svg");
+    margin-left:70%;
+}
+.players-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left:12px;
+    margin-top:68px;
+}
+.selection {
+    width:190px;
+    height: 55px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size:16px;
+}
+
+.button:hover {
+    filter: brightness(115%);
+}
+
+.disable-button {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.register-player {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom:30%;
+    height: 40vh;
+    width: 50vh;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color:#FFF;
+}
+
+h1 {
+    font-size: 31px;
+}
+
+.register-player {
+    text-align: center;
+}
+
+.register-player input[type=text], input[type=date]{
+    margin-top:21px;
+    margin-left:12px;
+    padding-left:15px;
+    width: 180px;
+    height: 20px;
+    font-size:18px;
+    background-color: transparent;
+    color:#FFF;
+    border:none;
+    border-bottom: 2px solid #FFF;
+    outline: none;
+}
+
+.register-player input[type=radio] {
+    margin-top:21px;
+    margin-right:12px;
+    outline: none;
+}
+
+.register-player input[type=submit] {
+    margin-top:40px;
+    width:240px;
+    height:50px;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: transparent;
+    color:#FFF;
+    border: 2px solid #FFF;
+    border-radius:12px;
+}
+
+.register-player input[type=submit]:hover {
+    transform: scale(1.05);
+    outline: none;
+}
+
+.gender-label {
+    padding-right:67px;
+    margin-left:30px;
+}
+
+.error-register {
+    width: 50vh;
+    padding:12px 0;
+    padding-left: 21px;
+    margin-top:20px;
+    position:absolute;
+    bottom:72%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #830b0bc7;
+    font-weight: 800;
+    color:#FFF;
+}
+
+.hidden {
+    display:none;
+}

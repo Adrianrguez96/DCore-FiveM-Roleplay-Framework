@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>Selector de personaje</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menustyle.css">
+    <link rel="stylesheet" href="css/wheelnav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/raphael.min.js"></script>
+    <script type="text/javascript" src="js/wheelnav.min.js"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class = "main-selector">
+        <div class ="main-buttons">
+            <div class ="button play disable-button"></div>
+            <div class= "button player"></div>
+        </div>
+        <div class ="players-selector hidden">
+            <div class="button create-player"></div>
+        </div>
+    </div>
+    <div class ="error-register hidden"></div>
+    <div class ="register-player hidden">
+        <h1>Registrar nuevo jugador</h1>
+        <form class ="register-form">
+            <label>Nombre y apellidos</label>
+            <input type="text" id="name"><br>
+            <label class="gender-label">Genero</label>
+            <label>Hombre</label>
+            <input type="radio" name='gender' value="male">
+            <label>Mujer</label>
+            <input type="radio" name='gender' value ="female"><br>
+            <label>Fecha de nacimiento</label>
+            <input type="date" id="birthday"><br>
+            <label>Altura</label>
+            <input type="text" id="height"><br>
+            <input type="submit" value="Registrar nuevo personaje">
+        </form>
+    </div>
+
+    <div class="main-menu hidden">
+        <div class="body-menu">
+            <div class="menu-button">
+                <h1 class ="menu-title not-skew">Título menu</h1>
+                <div class="close-button not-skew"></div>
+            </div>
+            <ul class = "menu-options">
+
+            </ul>
+        </div>
+    </div>
+
+    <div class ="main-wheelnav hidden">
+        <div id='wheelmenu' data-wheelnav data-wheelnav-slicepath='DonutSlice' data-wheelnav-marker data-wheelnav-markerpath='PieLineMarker' data-wheelnav-rotateoff 
+        data-wheelnav-navangle='270' data-wheelnav-cssmode data-wheelnav-init>
+        </div>
+    </div>
+    <script src="js/playerSelector.js" type ="text/javascript"></script>
+    <script src="js/registerPlayer.js" type ="text/javascript"></script>
+    <script src="js/menu.js" type ="text/javascript"></script>
+</body>
+</html>

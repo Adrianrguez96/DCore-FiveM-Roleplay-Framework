@@ -1,0 +1,237 @@
+:root {
+    --clothing-menu-color: rgba(39,41,45, 0.467);
+    --buttom-color: rgb(255,255,255);
+    --border-clothing: rgb(255, 255, 255);
+    --button-size: 80px;
+    --icon-clother-size: 30px;
+    --select-clother-menu: rgb(0,0,0);
+    --color-selector:rgb(54,56,60);
+}
+
+.container {
+    width: 100%;
+    height: 90%;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'ChaletLondonNineteenSixty', sans-serif;
+    font-weight: bold;
+    user-select: none;
+    overflow: hidden;
+}
+
+.lateral {
+    display:flex;
+    flex-direction: row;
+    height:100%;
+    width: 20vw;
+    margin-top:65px;
+    margin-left:40px;
+}
+
+.lateral-menu {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:1px solid var(--border-clothing);
+}
+
+.principal-menu {
+    background-color:var(--clothing-menu-color);
+    height: 90%;
+    width: 100%;
+    border-radius:21px;
+}
+
+.clothing-selector {
+    width:var(--button-size);
+    height: var(--button-size);
+    color: var(--buttom-color);
+    text-align:center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clothing-selector:hover {
+    background-color: var(--select-clother-menu);
+}
+
+.select {
+    background-color: var(--select-clother-menu);
+}
+
+.hair {
+    background-size: var(--icon-clother-size);
+    background-image: url("../image/clother/hair.svg");
+}
+
+.clother {
+    background-size:var(--icon-clother-size);
+    background-image: url("../image/clother/shirt.svg");
+}
+
+.accessories {
+    background-size:var(--icon-clother-size);
+    background-image: url("../image/clother/accesories.svg");
+}
+
+input {
+    text-align: center;  
+    border: 1px solid #6C757D;
+} 
+
+.list, .slider, .datainput {
+    position: relative;
+    width: 20vw;
+    height: 7vh;
+    display: inline-block;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0%;
+    width: 15vw;
+    height: 4.2vh;
+    background-color: rgba(64, 64, 64, 0.4);
+    border-radius: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.list .controls select, .datainput .controls input {
+    -webkit-appearance: none;
+    outline: none;
+    width: 85%;
+    height: 80%;
+    font: inherit;
+    text-align-last: center;
+    border: none;
+    background: none;
+    color: #f0f0f0;
+    font-size: 1.8vh;
+    font-weight: normal;
+    pointer-events:none;
+}
+
+.controls .arrow {
+    background: none;
+    background-image: url('../image/clother/arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    width: 77px;
+    outline: none;
+    border: none;
+    height: 55;
+}
+
+.controls .arrow.right {
+    transform: scaleX(-1);
+}
+
+.list , .slider {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    display: block;
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    top: -12%;
+    left: 0%;
+    font-size: 1.4vh;
+    color: #f0f0f0;
+    margin-left:21px;
+}
+
+.slider input[type=range] {
+    appearance: none;
+    background: 0 0;
+    width: 85%;
+    vertical-align: middle;
+    outline: 0;
+    padding: 0 1vh;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #ffffff;
+    height: 0.2rem;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -6px; /* Centers thumb on the track */
+    background-color: #fdfdfd;
+    height: 1rem;
+    width: 1rem;    
+    border-radius:50%;
+ }
+
+ .main-menu{
+    overflow:hidden;
+    overflow-y: auto;
+    height: 80%;
+ }
+
+ .main-menu h2 {
+    color:var(--buttom-color);
+    text-align: center;
+    font-size:1em;
+    padding-top:21px;
+
+ }
+
+ ::-webkit-scrollbar {
+    width: 15px;
+    margin:0;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #656768;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color:none;
+  }
+
+  .buttons-above {
+    display:flex;
+    flex-direction: row;
+    height: 9%;
+    border-top: 1px solid var(--border-clothing);
+  }
+
+  .buttons-above button {
+    background:none;
+    border: none;
+    color: var(--border-clothing);
+    width: 100%;
+    height: 100%;
+    font-size:1.2em;
+  }
+
+  .buttons-above button:hover {
+    background-color:var(--color-selector);
+  }
+
+  .accept:hover {
+    border-bottom-right-radius: 21px;
+  }
+
+  .cancel:hover {
+    border-bottom-left-radius: 21px;
+  }
+
+  .hidden {
+    display:none;
+  }

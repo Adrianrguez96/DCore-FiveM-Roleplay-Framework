@@ -1,0 +1,24 @@
+.main-wheelnav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#wheelmenu > svg { width: 100%; height: 100%; }
+#wheelmenu { height: 650px; width: 650px; margin:auto; }
+@media (max-width: 400px) { #wheelmenu { height: 300px; width: 300px; } }
+
+[class|=wheelnav-wheelmenu-slice-basic] { fill: #000000b9; stroke: none; }
+[class|=wheelnav-wheelmenu-slice-selected] { fill: #353535; stroke: none; }
+[class|=wheelnav-wheelmenu-slice-hover] { fill: #353535;  stroke: none; fill-opacity: 0.77; cursor: pointer; }
+
+[class|=wheelnav-wheelmenu-title-basic] { fill: rgb(255, 255, 255); stroke: none; }
+[class|=wheelnav-wheelmenu-title-selected] { fill: #fff; stroke: none; }
+[class|=wheelnav-wheelmenu-title-hover] { fill: rgb(255, 255, 255); stroke: none; cursor: pointer; }
+[class|=wheelnav-wheelmenu-title] > tspan {font-size: 1.3em; font-family: 'Roboto', sans-serif; font-weight: 800;}
+
+.hidden  {
+    display:none;
+}

@@ -1,0 +1,161 @@
+body {
+    margin:0; 
+    padding:0; 
+    overflow: hidden;
+    user-select: none;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.notifications {
+    width:40vh;
+    height:200px;
+    position: absolute;
+    top: 35%;
+    padding:12px;
+}
+
+.body-message {
+    background-color:#00000080;
+    padding:5px 12px;
+    margin-bottom:15px;
+    font-size:14px;
+    display: flex;
+	align-items: center;
+    transform: skew(-20deg);
+    color:#FFF;
+    font-weight: 800;
+    position: relative;
+    left:-22px;
+    min-height: 35px;   
+    border: #000 solid 2px;
+    animation: animationNotifications 0.7s linear both;
+}
+
+.footer {
+    position: absolute;
+    bottom:0;
+    text-align:center;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.above-notifications{
+    background-color:#00000080;
+    color:#FFF;
+    width: auto;
+    margin-bottom: 23px;
+    padding: 12px;
+    border-radius:12px;
+    float:left;
+    padding:15px;
+    display:none
+}
+
+.body-message > i {
+    border-right:#FFFFFF80 solid 2px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    width:30px;
+    height:20px;
+    padding:5px 12px;
+    transform:skew(20deg);
+    color:#FFF;
+    
+}
+
+.info-icon {
+    background-image: url('../images/info.svg');
+}
+
+.check-icon {
+    background-image: url('../images/checked.svg'); 
+}
+
+.warning-icon {
+    background-image: url('../images/warning.svg');
+}
+
+.error-icon {
+    background-image: url('../images/error.svg'); 
+}
+
+.info {
+    border-color:#67acf0;
+}
+
+.check {
+    border-color: #7fc786;
+}
+
+.warning {
+    border-color: #f7b356;
+}
+
+.error {
+    border-color: #fc8b64;
+}
+
+.text-message {
+    padding-left:15px;
+    transform:skew(20deg);
+}
+
+.dispach {
+    flex-direction: column;
+    left: -50px;
+    padding-left:12px;
+    width: 520px;
+}
+
+.dispach > .text-message {
+    padding-left:45px;
+}
+
+.title-message {
+    padding:5px;
+    transform:skew(20deg);
+    font-weight: 800;
+    font-size: 22px;
+    border-bottom: 2px solid #FFF;
+    margin-bottom:12px;
+    width: 100%;
+    text-align: center;
+}
+
+.button-selector {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:21px;
+    margin-left:50px;
+}
+
+.keyboard {
+    transform:skew(20deg);
+    background-color: rgb(151, 151, 151);
+    display: block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    padding:4px;
+    margin-right: 12px;
+    border-radius: 2px;
+}
+
+.info-key {
+    font-weight: 800;
+    margin-right:12px;
+}
+
+@keyframes animationNotifications {
+    0% {
+        left: -800px;
+    }
+    100% {
+        transform: translate(0) skew(-20deg);
+    }
+}

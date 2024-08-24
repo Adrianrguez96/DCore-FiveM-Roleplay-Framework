@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "FallingSky";
+    src: url("/nui/font/FallingSky.otf") format("opentype");
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.main-documents {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    width: 28vw;
+    height: 35vh;
+}
+
+.id-card {
+    background-image: url("/nui/images/id-card.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:95%;
+}
+
+.license-card {
+    background-image: url("/nui/images/patron-licenses.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:95%;
+}
+
+.id-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:22%;
+    left:12%;
+}
+
+.red-text {
+    color:#882939;
+    font-family: "FallingSky", Arial, sans-serif;
+    font-size:1.5vw;
+    font-weight: 300;
+}
+.birthday-id {
+    margin-top:1px;
+    margin-left:2px;
+}
+
+.expedition-id {
+    margin-top:2px;
+}
+
+.black-text {
+    color:#000;
+    font-family: "FallingSky", Arial, sans-serif;
+    font-size:1vw;
+}
+
+.signature {
+    width: 24vw;
+    height: 7vh;
+    position: relative;
+    left: 2vw;
+    top: 8.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size:3.2vw;
+    font-weight: 400;
+}
+
+.hidden {
+    display:none;
+}

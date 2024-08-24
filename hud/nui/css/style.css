@@ -1,0 +1,245 @@
+body {
+    margin:0; 
+    padding:0; 
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    user-select: none;
+}
+
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
+.server-logo {
+    background: url('../images/logo.png') no-repeat center;
+    background-size: 120px;
+    width:120px;
+    height:71px;
+    position: absolute;
+    top:5vh;
+    right:6vh;
+    display:block;
+}
+
+.main-gps {
+    background-color: #35333180;
+    color:#FFF;
+    font-weight: 800;
+    display:flex;
+    position:absolute;
+    left:3vh;
+    bottom:20vh;
+    height: 55px;
+    border-radius: 5px;
+}
+
+.main-gps > div {
+    text-align: center;
+    padding:5px;
+    margin-left:3px;
+}
+
+.locations {
+    margin-top:3px;
+    display:flex;
+    flex-direction:column;
+    width:20vh;
+}
+
+.compass {
+    width:4vh;
+    font-size:35px;
+    font-weight: 800;
+    letter-spacing:5px;
+    padding: 0 3px;
+}
+
+.main-status {
+    width: 45vh;
+    position:absolute;
+    bottom:-0.5vh;
+    left:0;
+    display:block;
+    padding-left:45px;
+}
+
+.decoration-line {
+	background-color: #60a760;
+    border: #353331 solid 4px;
+    width: 75%;
+    height:16px;
+    position: absolute;
+    top:38%;
+    left:-5px;
+    transform: skew(20deg);
+}
+
+.inWater {
+    display:none
+}
+
+.icon {
+    color:#999897;
+    font-size:18px;
+    display: inline-block;
+    position:relative;
+
+    transform:translate(-50%,-50%);
+}
+
+.main-status > svg{
+    margin-left:-15px;
+    position:relative;
+    stroke-width:4;
+}
+
+.main-status > i {
+    bottom:14px;
+    right:34px;
+}
+
+.rail {
+    stroke: #000;
+}
+
+.health, .armour, .hunger, .thirsty, .microphone {
+    fill:none;
+    stroke-dasharray: 138 138;
+    transform-origin: center;
+    transform:rotate(-90deg);
+}
+
+.health {
+    stroke: #437e43;
+}
+
+.armour {
+    stroke: #0C43AA;
+}
+
+.hunger {
+    stroke:#cf6511;
+    
+}
+
+.thirsty {
+    stroke:#1588c3;
+}
+
+.main-car {
+    position: absolute;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    bottom: 0;
+    right: 50%;
+    margin-right: -300px;
+    width: 60vh;
+}
+
+.main-microphone {
+    position:absolute;
+    bottom:2vh;
+    right: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-microphone > i {
+    font-size:2.3em
+}
+
+.speed-circle {
+    fill:#000;
+}
+
+.speed-rail {
+    stroke:#FFFF;
+    stroke-width: 15;
+    stroke-dasharray: 130 130;
+    stroke-linecap: round;
+    fill:none;
+}
+
+.speed-text {
+    color:#FFF;
+    font-weight: 800;
+    position:relative;
+    right:108px;
+    text-align: center;
+    width: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:5px;
+}
+
+.speed-number {
+    font-size:40px;
+    display: block;
+}
+
+.kilometer-text {
+    font-size:12px;
+    position:relative;
+    bottom:4px;
+    
+}
+
+.car-status {
+    position: relative;
+    left:90px;
+    bottom:2px;
+    display:grid;
+    grid-template-columns: 50px 50px;
+}
+
+.car-status > i {
+    color:#FFF;
+    position: relative;
+    font-size:13px;
+    right:26px;
+    top:23px;
+}
+
+.car-status > svg {
+    margin-bottom:5px;
+}
+
+.light-indicator {
+    background-image:url('../images/car-lights.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    margin-top:5px;
+    display: none;
+}
+
+.border-car-status {
+    stroke-width: 3;
+}
+
+.gas {
+    stroke:#FFF;
+    
+}
+
+.seatBelt-circle {
+    stroke: #881313;
+}
+
+.seatBelt {
+    background-image:url('../images/seatBelt.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width:18px;
+    height:18px;
+    margin-left: -3px;
+    margin-top:-2px;
+}
+
+.hidden {
+    display:none;
+}

@@ -1,0 +1,79 @@
+<html>
+    <head>
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width,initial-scale=1'>
+
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class='main-hud hidden'>
+        <div class='main-gps'>
+          <div class='compass'>NO</div>
+          <div class= 'locations'>
+            <span class ="street">San Andreas Avenue</span>
+            <span class ="zone">Mission Row</span>
+          </div>
+        </div>
+        <div class ="server-logo"></div>
+        <div class="main-status">
+          <div class ="decoration-line"></div>
+            <svg width="60" height="60">
+                <circle class ="rail" r="22" cx="30" cy="30" ></circle>
+                <circle class="health" r="22" cx="30" cy="30"></circle>
+              </svg>
+              <i class="fas fa-heart icon"></i>
+              <svg width="60" height="60">
+                <circle class="rail" r="22" cx="30" cy="30" ></circle>
+                <circle class="armour" r="22" cx="30" cy="30"></circle>
+              </svg>
+              <i class="fas fa-shield-alt icon"></i>
+              <svg width="60" height="60">
+                <circle class="rail" r="22" cx="30" cy="30" ></circle>
+                <circle class="hunger" r="22" cx="30" cy="30"></circle>
+              </svg>
+              <i class="fas fa-utensils icon"></i>
+              <svg width="60" height="60">
+                <circle class="rail" r="22" cx="30" cy="30"></circle>
+                <circle class="thirsty" r="22" cx="30" cy="30"></circle>
+              </svg>
+              <i class="fas fa-tint icon"></i>
+              <svg class="inWater" width="60" height="60">
+                <circle class="rail" r="22" cx="30" cy="30"></circle>
+                <circle class="oxygen" r="22" cx="30" cy="30"></circle>
+              </svg>
+              <i class="inWater fa-solid fa-lungs icon"></i>
+        </div>
+        <div class="main-car">
+          <div class ="car-status">
+            <svg class ="gas-status" width="60" height="60">
+              <circle class="rail" r="18" cx="30" cy="30"></circle>
+              <circle class="gas border-car-status" r="18" cx="30" cy="30"></circle>
+            </svg>
+            <i class="fas fa-gas-pump"></i>
+            <svg width="60" height="60">
+              <circle class="seatBelt-circle border-car-status" r="18" cx="30" cy="30"></circle>
+            </svg>
+            <i class ="seatBelt"></i>
+          </div>
+        <svg width="150" height="150">
+          <circle class="speed-rail" r="60" cx="75" cy="75"></circle>
+          <circle class="speed-circle" r="60" cx="75" cy="75"></circle>
+        </svg>
+        <div class="speed-text">
+          <span class ="speed-number">170</span>
+          <span class ="kilometer-text">km/h</span>
+          <i class ="light-indicator"></i>
+        </div>
+        </div>
+        <div class="main-microphone">
+          <i class="fas fa-microphone icon"></i>
+        </div>
+      </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="./js/index.js" type="module"></script>
+    </body>
+</html>

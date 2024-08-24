@@ -1,0 +1,132 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class ="main-banking hidden">
+        <div class ="banking-menu">
+            <div class="bank-logo"></div>
+            <ul>
+                <li data-menu =".home"><i class="fas fa-home"></i> Inicio</li>
+                <li data-menu =".accounts"><i class="fas fa-university"></i> Mis cuentas</li>
+                <li data-menu =".transfer"><i class="fas fa-money-check-alt"></i> Transferencia </li>
+                <li data-menu =".cards"><i class="fas fa-credit-card"></i> Mis tarjetas</li>
+                <li data-menu =".exit"><i class="fas fa-sign-out-alt"></i> Salir</li>
+            </ul>
+        </div>
+
+        <div class = "body-banking home">
+            <div class = "body-title"><h1>Inicio</h1></div>
+            <div class ="body-center">
+
+                <div class ="box-info">
+                    <h2>Bienvenido</h2>
+                    Bienvenido al area de cliente del banco, aquí podras tanto ingresar, sacar dinero o hacer cualquier gestión bancaria que usted vea necesario.
+                    Recuerde que también podrá hacer las mismas acciones a traves de su ordenador persona o app del movil.
+                </div>
+                <div class="lateral-box">
+                    <div class="box-info">
+                        <h2>Dinero total en las cuentas</h2>
+                        <span class="total-money">$20000</span>
+                    </div>
+                    <div class="box-info">
+                        <h2>!Importante!</h2>
+                    </div>
+                </div>
+                <div class="box-info">
+                    <h2>Ultimos movimientos bancarios</h2>
+                    <table class="table-bank log-baking">
+                        <tr>
+                          <th>Fecha y hora del movimiento</th>
+                          <th>Movimiento realizado</th>
+                        </tr>
+                        <tr>
+                          <td>Alfreds Futterkiste</td>
+                          <td>Maria Anders</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class = "body-banking accounts hidden">
+            <div class = "body-title"><h1>Tus cuentas bancarias</h1></div>
+            <div class ="box-info box-complete">
+                <h2>Mis cuentas bancarias</h2>
+                <table class="table-bank bank-accounts">
+                    <tr>
+                      <th>Número de cuenta</th>
+                      <th>Nombre de la cuenta</th>
+                      <th>Total</th>
+                    </tr>
+                    <tr>
+                      <td>Alfreds Futterkiste</td>
+                      <td>Maria Anders</td>
+                      <td>Germany</td>
+                    </tr>
+                </table>
+                <button class="btn btn-green btn-big text-new-account new-bankaccount" type="button">Crear una nueva cuenta</button>
+            </div>
+        </div>
+
+        <div class = "body-banking transfer hidden">
+            <div class = "body-title"><h1>Transferencias bancarias</h1></div>
+            <div class ="body-center">
+                <div class ="box-info box-complete">
+                    <h2>Mis cuentas bancarias</h2>
+                    Para hacer una transferencia a una cuenta es necesario poner el número de IBAN de la cuenta a enviar el dinero. Recuerde que una vez realizado la transferencia,
+                    no se podrá cancelar este. A parte, desde aquí, podras transferir dinero entre tus propias cuentas.
+                </div>
+                <div class="lateral-box">
+                    <div class="box-info">
+                        <h2>Datos para hacer la transferencia bancaria</h2>
+                        <form class="bank-transfer">
+                            <label for="form-information">Número de cuenta bancaria</label> 
+                            <br>         
+                            <input type="text" class="bank-account"> 
+                            <br>
+                            <label for="form-information">Cantidad a transferir</label> 
+                            <br>         
+                            <input type="text" class="bank-account"> 
+                            <br>
+                            <label for="form-information">Concepto</label>   
+                            <br>       
+                            <input type="text" class="bank-account"> 
+                            <br>
+                        </form>
+                    </div>
+                    <div class="box-info box-column">
+                        <button class="btn btn-green btn-big make-transfer" type="button" disabled>Hacer la transferencia</button>
+                        <button class="btn btn-red btn-big cancel-transfer" type="button">Cancelar la transferencia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "body-banking cards hidden">
+            <div class = "body-title"><h1>Gestionar tú tarjeta</h1></div>
+            <div class ="body-center">
+                <div class="lateral-box">
+                    <div class="box-info box-column">
+                        <h2>Datos de tu tarjeta bancaria</h2>
+                        <span class="info-text">Nombre y apellido:</span>
+                        <span class="info-text">Número de la tarjeta:</span>
+                        <span class="info-text">Fecha expedición:</span>
+                        <span class="info-text">Fecha caducidad:</span>
+                    </div>
+                    <div class="box-info box-column">
+                        <button class="btn btn-green btn-big make-creditcard" type="button" disabled>Solicitar tarjeta</button>
+                        <button class="btn btn-red btn-big block-creditcard" type="button">Bloquear tarjeta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+:root {
+    --text-color: #E1E1E6;
+    --background-color: #1B1E27;
+    --box-color: #252834;
+    --font-text: 'HelveticaNeue', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-banking {
+    background-color: var(--background-color);
+    width: 60vw;
+    height: 70vh;
+    border-radius: 12px;
+    display:flex;
+}
+
+.banking-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:2vw;
+    padding-inline-end: 1.2vw;
+    border-right: var(--box-color) solid 2px;
+}
+
+.bank-logo {
+    background-image: url("../images/mazeBank-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12vw;
+    width: 12vw;
+    height: 12vh;
+    margin: 6vh 0;
+}
+
+.banking-menu ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.banking-menu li {
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 2vh 1vw;
+    color: var(--text-color);
+    font-family: var(--font-text);
+}
+
+.banking-menu li:hover {
+    background-color:#252834;
+    border-radius: 12px;
+}
+
+.body-banking {
+    color: var(--text-color);
+    font-family: var(--font-text);
+    padding-left:1.2vw;
+}
+
+.body-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75%;
+}
+
+.box-info {
+    background-color:var(--box-color);
+    font-family: var(--font-text);
+    border-radius: 21px;
+    padding:21px;
+    min-width: 15vw;
+    max-width: 35vw;
+    margin:2vh 0.5vw;
+}
+
+.box-info h2 {
+    font-size:1em;
+    padding:0;
+    margin:0;
+    margin-bottom:0.8vh;
+}
+
+.box-complete {
+    width: 38vw;
+}
+
+.box-column {
+    display:flex;
+    flex-direction: column;
+}
+
+.total-money {
+    font-size:2em;
+    letter-spacing: 0.02em;
+    color:#428f10;
+}
+
+.lateral-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+input[type=text]  {
+    width: 18vw;
+    height: 3.2vh;
+    font-size:1.2em;
+    border-radius: 12px;
+    border: none;
+    margin:1vh 0;
+}
+
+label {
+    font-size:1.2em;
+}
+
+.btn {
+    border-radius: 12px;
+    border: none;
+    margin: 2vh 1vw;
+    color:#FFF;
+}
+
+.btn:hover {
+    transform: scale(1.01);
+    filter: brightness(1.05);
+}
+
+.btn:disabled {
+    transform: scale(1);
+    filter: brightness(0.75);
+}
+
+.btn-big {
+    width: 14vw;
+    height: 7vh;
+    font-size:1.4em;
+}
+
+.text-new-account {
+    font-size:1.2em;
+}
+
+.btn-green {
+    background-color: #4CAF50;
+}
+
+.btn-red {
+    background-color: rgb(192, 22, 22);
+}
+
+.info-text {
+    margin: 0.8vh 0;
+}
+
+.table-bank{
+    color: #FFF;
+    width: 80%;
+    margin:auto;
+    border-radius: 12px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table-bank th,td {
+    padding:12px;
+    background-color:#1111119f;
+    border-bottom: 2px solid #ffffff7a;
+}
+
+.table-bank tbody > tr:last-child > td {
+    border-bottom: none;
+  }
+
+.table-bank th:first-of-type {
+    border-top-left-radius: 12px;
+}
+
+.table-bank th:last-of-type {
+    border-top-right-radius: 12px;
+}
+
+.table-bank tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.table-bank tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.bank-accounts tr:hover:not(:first-child) {
+    background-color:#ffffff48;
+}
+
+.hidden {
+    display: none;
+}
