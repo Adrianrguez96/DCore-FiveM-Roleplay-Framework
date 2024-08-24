@@ -1,12 +1,19 @@
 <div align="center"><img src="https://i.ibb.co/Fxgq0QH/logo.png" alt="D-Core logo"></div>
 
 # D-Core Framework
-That is a basic core framework where your are create a your own **roleplay server**. That is based in POO programing in LUA and, the nui, used HTML5, CSS3, query and javascript with standar ES6.
+D-Core Framework is a foundational core designed to help you create and manage your own roleplay server on FiveM. Built with an object-oriented programming (OOP) approach in Lua, D-Core utilizes modern web technologies such as HTML5, CSS3, jQuery, and ES6 JavaScript for its NUI (New User Interface).
 
-# Use core functions in another resourse
-You can use the core functions in another resourse or modify ESX or Qbus scripts to be use the D-Core. In the case of client, you must declared the next in your first part of script or, I recommend crearte a new file lua calls **core.lua** where you separe  this part of the script logic.
+## Features
+- Object-Oriented Programming: D-Core leverages Lua's OOP capabilities, allowing for clean, modular, and maintainable code.
+- Modern Web Technologies: The NUI components are built using HTML5, CSS3, jQuery, and JavaScript (ES6), ensuring a responsive and dynamic user interface.
+- Flexible Integration: Easily integrate D-Core with other resources or modify existing scripts like ESX or Qbus to work seamlessly with D-Core.
 
-**Client declaration**
+# Using Core Functions in Other Resources
+D-Core's core functions can be integrated into other resources or modified scripts to enhance your server's capabilities. Below are the basic declarations needed to start using D-Core in your client and server scripts.
+
+## Client-Side Declaration
+To use D-Core functions on the client side, add the following code at the beginning of your script. It's recommended to create a separate file, core.lua, where you can manage this part of your script logic.
+
  ```
 Core = Core or {}
 
@@ -21,7 +28,9 @@ Citizen.CreateThread(function()
     end
 end)
  ```
-**Server declaration**
+ ## Server-Side Declaration
+Similarly, to use D-Core functions on the server side, include the following code:
+
 ```
 Core = Core or {}
 
@@ -36,6 +45,12 @@ Citizen.CreateThread(function()
     end
 ```
 
-In the future, I will create a wiki where you can see the explanations of funtions that include this framework and I continue upload new versions of **D-Core** framework.
+# Important Note
 
-###   This is an alpha version of the framework, it can include bugs or functionalities not yet programmed or half done.
+This is an alpha version of the framework, which means it may contain bugs or incomplete features. Your feedback and contributions are welcome as the framework continues to evolve.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
